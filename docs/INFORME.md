@@ -1,22 +1,22 @@
-﻿# Student technical note
+﻿# Informe técnico (estudiante)
 
-Goal: run a Spring Boot project with /hello endpoint and validate local execution.
+**Objetivo:** generar un proyecto Spring Boot 3.5.6 (Maven, Java 17) con endpoint /hello y validar ejecución local.
 
-1) POM summary
+## POM (resumen)
 - Parent: spring-boot-starter-parent:3.5.6
 - Java: 17
-- Dependencies: spring-boot-starter-web (+ test)
+- Dependencias: spring-boot-starter-web (+ test)
 
-2) Key files
-- src/main/java/com/example/proyecto/DemoApplication.java
-- src/main/java/com/example/proyecto/web/HelloController.java
+## Estructura
+- src/main/java/com/example/proyecto/DemoApplication.java (@SpringBootApplication)
+- src/main/java/com/example/proyecto/web/HelloController.java (GET /hello)
 - src/main/resources/application.properties
 
-3) Run
+## Ejecución
 mvn spring-boot:run
-Test: http://localhost:8080/hello
+Probar: http://localhost:8080/hello
 
-4) Evidence (saved in /docs)
-- 01-run-console.png
-- 02-hello-response.png
-- hello-response.txt
+## Evidencias
+- docs/01-run-console.jpg
+- docs/02-hello-response.jpg
+- docs/hello-response.txt
